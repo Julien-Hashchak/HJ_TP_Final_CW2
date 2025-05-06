@@ -1,0 +1,36 @@
+/*- BASE -*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+/*- GÉNÉRAL -*/
+
+body{
+    font-family: "Montserrat", "Nunito", "Raleway", sans-serif;
+    background-color: #A1B0AB;
+}
+
+.wrapper{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/*- ÉLÉMENTS -*/
+
+/*- COMPONENTS -*/
+
+/* header */
+
+/* hero */
+
+/* inscription */
+
+/* équipe */
+
+/* produits */
+
+/* contact */
+
+/* footer */
+
+/* modale */
