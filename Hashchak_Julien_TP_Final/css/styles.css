@@ -8,6 +8,8 @@ html{
 body{
     font-family: "Montserrat", "Nunito", "Raleway", sans-serif;
     background-color: #A1B0AB;
+
+    
 }
 
 .wrapper{
@@ -16,14 +18,169 @@ body{
 }
 
 /*- ÉLÉMENTS -*/
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #fff;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+h2{
+    font-family: "Nunito", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-family: "Nunito", sans-serif;
+    font-size: 2.4rem;
+    line-height: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+p{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 25px;
+    font-weight: 400;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    text-decoration: none;
+}
+
+hr{
+    color: #424242;
+    border: 3px solid #424242;
+}
+
+ul{
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+
 
 /*- COMPONENTS -*/
 
 /* header */
 
+header{
+    background-color: #EB4652;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav img{
+    margin: 0 115px;
+}
+
+header nav a:hover{
+    text-decoration-line: underline;
+    color: #424242;
+}
+
 /* hero */
 
-/* inscription */
+.hero{
+    height: 650px;
+    width: 100%;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    background-position: bottom;
+
+    
+}
+
+.hero .wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.boite{
+ 
+    width: 600px;
+
+    background-color: #424242;
+    padding: 30px;
+}
+
+.hero p{
+    color: #fff;
+}
+
+/* description */
+
+.description h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.description p{
+    margin-bottom: 40px;
+}
+
+.description a{
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 30px;
+    background-color: #EB4652;
+}
 
 /* équipe */
 
