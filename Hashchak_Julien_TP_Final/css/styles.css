@@ -25,9 +25,10 @@ h1{
     letter-spacing: 3px;
     color: #fff;
 
-    text-align: center;
+    text-align: left;
 
     margin: 0;
+    margin-bottom: 10px;
     padding: 0;
 
 
@@ -73,7 +74,7 @@ a{
     font-family: "Raleway", sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
-    color: white;
+    
 
     margin: 0;
     padding: 0;
@@ -131,6 +132,10 @@ header nav img{
     margin: 0 115px;
 }
 
+header nav a{
+    color: white;
+}
+
 header nav a:hover{
     text-decoration-line: underline;
     color: #424242;
@@ -139,31 +144,41 @@ header nav a:hover{
 /* hero */
 
 .hero{
-    height: 650px;
+    
     width: 100%;
     background-image: url(../images/hero.png);
     background-size: cover;
     background-position: bottom;
-
+    
     
 }
 
 .hero .wrapper{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
+    position: relative;
+    height: 650px;
+   
+
+    
 }
 
 .boite{
- 
-    width: 600px;
 
+    position: absolute;
+    bottom: 70px;
+    
+    width: 600px;
     background-color: #424242;
     padding: 30px;
+    width: 560px;
+    
 }
 
 .hero p{
     color: #fff;
+    text-align: left;
 }
 
 /* description */
@@ -186,6 +201,11 @@ header nav a:hover{
     font-style: italic;
     padding: 10px 30px;
     background-color: #EB4652;
+    color: white;
+}
+
+.description a:hover{
+    background-color: #929487;
 }
 
 /* équipe */
@@ -193,6 +213,7 @@ header nav a:hover{
 .equipe h2{
     margin: 25px 0;
 }
+
 .grilleEquipe{
     margin-top: 30px;
 
@@ -223,9 +244,13 @@ header nav a:hover{
 .produits{
     background-color: #AEE5D8;
     padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
-
+.produits h2{
+    margin-bottom: 25px;
+}
 
 .produits nav{
     margin: 36px 0 55px 0;
@@ -238,11 +263,24 @@ header nav a:hover{
     gap: 50px;
 }
 
+.produits nav a{
+    color: white;
+    background-color: #EB4652;
+    padding: 5px 10px;
+  
+}
+
+.produits nav a:hover{
+    background-color: #929487;
+}
+
 .grilleProduits{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 70px;
+
+    margin-bottom: 20px;
 }
 
 .grilleProduits article{
@@ -251,17 +289,154 @@ header nav a:hover{
 
 .grilleProduits img{
     background-color: #fff;
-    border-inline: 5px solid #424242;
-    border-inline-end: 5px solid #424242;
+    border: 5px solid #424242;  /*- -*/
+    border: 10px solid rgba(0, 0, 0, 0);
+    
 }
 
 .grilleProduits img:hover{
     background-color: #55D6C2;
+    border: 0 solid #424242;
     border: 10px solid #424242;
+}
+
+.produits a.bouton{
+    color: #fff;
+    
+    font-weight: bold;
+    font-style: italic;
+
+    padding: 10px 30px;
+    background-color: #EB4652;
+    
+}
+
+.produits a.bouton:hover{
+    background-color: #929487;
 }
 
 /* contact */
 
+.contact{
+    padding: 50px 0;
+    background-color: #929487;
+}
+
+.contact h2{
+    
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.contact .wrapper{
+    background-color: #A1B0AB;
+    padding-bottom: 50px;
+}
+
+.alignement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+
+    margin-bottom: 45px;
+}
+
+.alignement img{
+    margin-left: 75px;
+}
+
+.contenu{
+    margin-right: 75px;
+}
+
+.contenu p{
+    text-align: start;
+}
+
+.contenu h3{
+    text-align: start;
+    color: black;
+}
+
+.contenu a{
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    
+}    
+
+.contenu .location{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact nav img{
+    margin: 0;
+}
+
+.contact a.bouton{
+    color: #424242;
+    padding: 15px 40px;
+    font-style: italic;
+    font-weight: bold;
+
+    border: 3px solid #EB4652;
+    border-radius: 5px;
+
+    margin-top: 45px;
+}
+
+.contact a.bouton:hover{
+    color: black;
+}
+
+
 /* footer */
+
+.footer{
+    background-color: #424242;
+}
+
+.footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 50px;
+}
+
+.footer p{
+    color: #fff;
+}
+
+.footer a{
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid #fff;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.footer a:hover{
+    border: 3px solid #929487;
+}
 
 /* modale */
