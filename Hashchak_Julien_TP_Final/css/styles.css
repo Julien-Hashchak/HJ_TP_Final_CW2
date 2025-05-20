@@ -82,6 +82,11 @@ a{
     text-align: center;
 
     text-decoration: none;
+
+    
+}
+a.bouton{
+    font-variant: small-caps;
 }
 
 hr{
@@ -119,6 +124,7 @@ header nav{
     align-items: center;
 
     height: 60px;
+    font-variant: small-caps;
 }
 
 header nav ul{
@@ -172,7 +178,7 @@ header nav a:hover{
     width: 600px;
     background-color: #424242;
     padding: 30px;
-    width: 560px;
+    width: 500px;
     
 }
 
@@ -267,7 +273,8 @@ header nav a:hover{
     color: white;
     background-color: #EB4652;
     padding: 5px 10px;
-  
+
+    font-variant: small-caps;
 }
 
 .produits nav a:hover{
@@ -323,7 +330,7 @@ header nav a:hover{
 }
 
 .contact h2{
-    
+    font-variant: small-caps;
     margin-bottom: 50px;
     padding-top: 50px;
 }
@@ -439,3 +446,24 @@ header nav a:hover{
 }
 
 /* modale */
+
+
+
+/* =============== Liste-article =============== */
+
+
+/* hero */
+.vedette .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.vedette .boiteVedette{
+    background-color: #424242;
+    color: white;
+    width: 500px;
+}
