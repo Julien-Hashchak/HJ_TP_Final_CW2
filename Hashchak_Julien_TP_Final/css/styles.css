@@ -17,6 +17,8 @@ body{
     margin: 0 auto;
 }
 
+/* =============== Accueil =============== */
+
 /*- ÉLÉMENTS -*/
 h1{
     font-family: "Montserrat", sans-serif;
@@ -462,8 +464,28 @@ header nav a:hover{
     padding-bottom: 50px;
 }
 
+.vedette img{
+    background-color: rgba(66,66,66, 0.5);
+}
+
 .vedette .boiteVedette{
     background-color: #424242;
     color: white;
     width: 500px;
+
+    padding: 30px;
+}
+
+.vedette h2{
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.vedette p:first-of-type{
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.vedette p{
+    text-align: start;
 }
