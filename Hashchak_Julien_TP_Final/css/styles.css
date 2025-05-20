@@ -489,3 +489,25 @@ header nav a:hover{
 .vedette p{
     text-align: start;
 }
+
+/* =============== Liste-article =============== */
+
+/* recommandations */
+
+.recommendations{
+    padding: 50px;
+    background-color: #AEE5D8;
+}
+
+.listeRecommendations{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.listeRecommendations article{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
