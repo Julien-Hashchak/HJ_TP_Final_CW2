@@ -510,4 +510,30 @@ header nav a:hover{
     display: flex;
     flex-direction: column;
     background-color: #fff;
+
+    margin-bottom: 50px;
+}
+
+.listeRecommendations a:hover{
+    background-color: #929487;
+}
+
+.boutons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.boutons a{
+    background-color: #EB4652;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.boutons a:hover{
+    background-color: #929487;
 }
