@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIMedia accueil</title>
+    <title>TIMedia-accueil</title>
 
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -19,6 +19,8 @@
 </head>
 <body>
 
+<!-- header -->
+
     <header id="top">
         <div class="wrapper">
             <nav>
@@ -26,7 +28,10 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="liste-article.html">Les offres</a></li>
                 </ul>
-                <a href="index.html"><img src="images/logo.png" alt="TIMedia"></a>
+                <ul class="logo">
+                    <li><a href="index.html"><img src="images/logo.png" alt="TIMedia"></a></li>
+                    <li><a href="index.html">TIMedia</a></li>
+                </ul>
                 <ul>
                     <li><a href="index.html#equipe">Équipes</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
@@ -35,6 +40,8 @@
         </div>
     </header>
     
+<!-- hero -->
+
     <section class="hero" id="hero">
         <div class="wrapper">
             <div class="boite">
@@ -53,6 +60,8 @@
         </div>
     </section>
 
+<!-- équipe -->
+
     <section class="equipe" id="equipe">
         <div class="wrapper">
             <h2>Notre Équipe</h2>
@@ -61,23 +70,25 @@
 
                 <div class="grilleEquipe">
                     <article>
-                        <a href="#" class="personne"><img src="images/personne1.png" alt="Julien"></a>
+                        <a href="#" class="personne1"><img src="images/personne1.png" alt="Julien"></a>
                         <h3>JULIEN <br>Hashchak</h3>
                         <p>Ingénieur de son</p>
                     </article>
                     <article>
-                        <a href="#" class="personne"><img src="images/personne2.png" alt="Maxime"></a>
+                        <a href="#" class="personne2"><img src="images/personne2.png" alt="Maxime"></a>
                         <h3>MAXIME <br>GOULET</h3>
-                        <p>Entrepreneure</p>
+                        <p>Entrepreneuse</p>
                     </article>
                     <article>
-                        <a href="#" class="personne"><img src="images/personne3.png" alt="Justin"></a>
+                        <a href="#" class="personne3"><img src="images/personne3.png" alt="Justin"></a>
                         <h3>JUSTIN <br>LYONS</h3>
                         <p>Programmeur</p>
                     </article>
                 </div>
         </div>
     </section>
+
+<!-- produits -->
 
     <section class="produits" id="produits">
         <div class="wrapper">
@@ -149,6 +160,8 @@
         </div>
     </section>
 
+<!-- contact     -->
+
     <section class="contact" id="contact">
         <div class="wrapper">
             <h2>Nous contacter</h2>
@@ -177,6 +190,8 @@
         </div>
     </section>
 
+<!-- footer     -->
+
     <section class="footer">
         <div class="wrapper">
             <p>© 2025 TIM. Tous droits réservés.</p>
@@ -186,7 +201,25 @@
         </div>
     </section>
     
-    <div class="modale"><div class="visible"></div></div>
+<!-- modales     -->
+    
+    <div class="modale1">
+        <img src="images/personne1.png" alt="personne1">
+        <h3>JULIEN <br>Hashchak</h3>
+        <p>Ingénieur de son</p>
+    </div>
+
+    <div class="modale2">
+        <img src="images/personne2.png" alt="personne2">
+        <h3>MAXIME Goulet <br>Hashchak</h3>
+        <p>Entrepreneuse</p>
+    </div>
+
+    <div class="modale3">
+        <img src="images/personne3.png" alt="personne3">
+        <h3>JUSTIN <br>Lyons</h3>
+        <p>Programmeur</p>
+    </div>
     
 </body>
 </html>

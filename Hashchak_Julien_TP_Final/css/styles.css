@@ -1,9 +1,13 @@
-/*- BASE -*/
+/*========== BASE ==========*/
 html{
     box-sizing: border-box;
     font-size: 62.5%;
 }
-/*- GÉNÉRAL -*/
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+/*========== GÉNÉRAL ==========*/
 
 body{
     font-family: "Montserrat", "Nunito", "Raleway", sans-serif;
@@ -17,9 +21,11 @@ body{
     margin: 0 auto;
 }
 
-/* =============== Accueil =============== */
+/* ====================================
+                Accueil 
+====================================*/
 
-/*- ÉLÉMENTS -*/
+/*========== ÉLÉMENTS ==========*/
 h1{
     font-family: "Montserrat", sans-serif;
     font-size: 3.8rem;
@@ -88,7 +94,7 @@ a{
     
 }
 a.bouton{
-    font-variant: small-caps;
+    text-transform: uppercase;
 }
 
 hr{
@@ -111,14 +117,23 @@ li{
 }
 
 
-/*- COMPONENTS -*/
+/*========== COMPONENTS ==========*/
 
-/* header */
+/*- header -*/
 
 header{
     background-color: #EB4652;
     height: 60px;
 }
+
+.logo{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+}
+
+/* header nav */
 
 header nav{
     display: flex;
@@ -126,7 +141,7 @@ header nav{
     align-items: center;
 
     height: 60px;
-    font-variant: small-caps;
+    text-transform: uppercase;
 }
 
 header nav ul{
@@ -149,7 +164,8 @@ header nav a:hover{
     color: #424242;
 }
 
-/* hero */
+
+/*- hero -*/
 
 .hero{
     
@@ -172,6 +188,11 @@ header nav a:hover{
     
 }
 
+.hero p{
+    color: #fff;
+    text-align: left;
+}
+
 .boite{
 
     position: absolute;
@@ -184,12 +205,9 @@ header nav a:hover{
     
 }
 
-.hero p{
-    color: #fff;
-    text-align: left;
-}
 
-/* description */
+
+/*- description -*/
 
 .description{
     text-align: center;
@@ -198,6 +216,7 @@ header nav a:hover{
 .description h2{
     margin-top: 50px;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .description p{
@@ -216,10 +235,20 @@ header nav a:hover{
     background-color: #929487;
 }
 
-/* équipe */
+/*- équipe -*/
 
 .equipe h2{
     margin: 25px 0;
+    text-transform: uppercase;
+}
+
+.equipe h3{
+    margin-top: 30px;
+}
+
+.equipe img{
+    max-width: 363px;
+    max-height: 363px;
 }
 
 .grilleEquipe{
@@ -234,20 +263,11 @@ header nav a:hover{
     gap: 115px;
 }
 
-.equipe img{
-    max-width: 363px;
-    max-height: 363px;
-}
-
-.equipe h3{
-    margin-top: 30px;
-}
-
 .equipe article p{
     margin-bottom: 50px;
 }
 
-/* produits */
+/*- produits -*/
 
 .produits{
     background-color: #AEE5D8;
@@ -258,55 +278,6 @@ header nav a:hover{
 
 .produits h2{
     margin-bottom: 25px;
-}
-
-.produits nav{
-    margin: 36px 0 55px 0;
-}
-
-.produits nav ul{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 50px;
-}
-
-.produits nav a{
-    color: white;
-    background-color: #EB4652;
-    padding: 5px 10px;
-
-    font-variant: small-caps;
-}
-
-.produits nav a:hover{
-    background-color: #929487;
-}
-
-.grilleProduits{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 70px;
-
-    margin-bottom: 20px;
-}
-
-.grilleProduits article{
-    text-align: center;
-}
-
-.grilleProduits img{
-    background-color: #fff;
-    border: 5px solid #424242;  /*- -*/
-    border: 10px solid rgba(0, 0, 0, 0);
-    
-}
-
-.grilleProduits img:hover{
-    background-color: #55D6C2;
-    border: 0 solid #424242;
-    border: 10px solid #424242;
 }
 
 .produits a.bouton{
@@ -324,23 +295,86 @@ header nav a:hover{
     background-color: #929487;
 }
 
-/* contact */
+/* produits navigation */
+
+.produits nav{
+    margin: 36px 0 55px 0;
+}
+
+.produits nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.produits nav a{
+    color: white;
+    background-color: #EB4652;
+    padding: 5px 10px;
+
+    text-transform: uppercase;
+    font-variant-numeric: lining-nums;
+}
+
+.produits nav a:hover{
+    background-color: #929487;
+}
+
+/* grille produits */
+
+.grilleProduits{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 70px;
+
+    margin-bottom: 20px;
+}
+
+.grilleProduits article{
+    text-align: center;
+}
+
+.grilleProduits h3{
+    margin-top: 20px;
+}
+
+.grilleProduits img{
+    background-color: #fff;
+    border: 5px solid #424242; 
+    
+    
+}
+
+.grilleProduits img:hover{
+    background-color: #55D6C2;
+    outline: 10px solid #424242;
+}
+
+
+
+/*- contact -*/
 
 .contact{
     padding: 50px 0;
     background-color: #929487;
+    text-align: center;
 }
 
 .contact h2{
-    font-variant: small-caps;
+    text-transform: uppercase;
     margin-bottom: 50px;
     padding-top: 50px;
+    text-align: center;
 }
 
 .contact .wrapper{
     background-color: #A1B0AB;
     padding-bottom: 50px;
 }
+
+/* contact alignement */
 
 .alignement{
     display: flex;
@@ -354,6 +388,8 @@ header nav a:hover{
 .alignement img{
     margin-left: 75px;
 }
+
+/* contact contenu */
 
 .contenu{
     margin-right: 75px;
@@ -379,9 +415,7 @@ header nav a:hover{
     margin-bottom: 40px;
 }
 
-.contact{
-    text-align: center;
-}
+/* contact navigation */
 
 .contact nav{
     margin-top: 20px;
@@ -395,6 +429,8 @@ header nav a:hover{
     margin: 0;
     max-width: 50px;
 }
+
+/* contact bouton */
 
 .contact a.bouton{
     color: #424242;
@@ -413,7 +449,7 @@ header nav a:hover{
 }
 
 
-/* footer */
+/*- footer -*/
 
 .footer{
     background-color: #424242;
@@ -447,14 +483,51 @@ header nav a:hover{
     border: 3px solid #929487;
 }
 
-/* modale */
+/*- modale -*/
+
+div.modale1, div.modale2, div.modale3{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
 
 
+.modale1.visible, .modale2.visible, .modale3.visible{
+    display: flex;
+}
 
-/* =============== Liste-article =============== */
+div.modale1 img, div.modale2 img, div.modale3 img{
+    width: 500px;
+}
+
+div.modale1 h3, div.modale2 h3, div.modale3 h3{
+    color: #fff;
+    margin-top: 25px;
+}
+
+div.modale1 p, div.modale2 p, div.modale3 p{
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* ====================================
+                Fiche-article 
+====================================*/
 
 
-/* hero */
+/*- hero -*/
 .vedette .wrapper{
     display: flex;
     justify-content: space-between;
@@ -466,6 +539,10 @@ header nav a:hover{
 
 .vedette img{
     background-color: rgba(66,66,66, 0.5);
+}
+
+.vedette img:hover{
+    background-color: #929487;
 }
 
 .vedette .boiteVedette{
@@ -490,13 +567,16 @@ header nav a:hover{
     text-align: start;
 }
 
-/* =============== Liste-article =============== */
+/* ====================================
+                Liste-article 
+====================================*/
 
-/* recommandations */
+/*- recommandations -*/
 
 .recommendations{
     padding: 50px;
     background-color: #AEE5D8;
+    text-align: center;
 }
 
 .listeRecommendations{
@@ -509,14 +589,29 @@ header nav a:hover{
 .listeRecommendations article{
     display: flex;
     flex-direction: column;
-    background-color: #fff;
 
     margin-bottom: 50px;
 }
 
-.listeRecommendations a:hover{
-    background-color: #929487;
+.listeRecommendations a{
+    background-color: #fff;
+    border: 5px solid #424242;;
 }
+
+.listeRecommendations a:hover{
+    background-color: #55D6C2;
+    
+    outline: 10px solid #424242;
+
+    padding: 0;
+    margin: 0;
+}
+
+.listeRecommendations h3{
+    margin-top: 20px;
+}
+
+/* boutons */
 
 .boutons{
     display: flex;
@@ -526,6 +621,7 @@ header nav a:hover{
     color: #fff;
     text-decoration: none;
     
+    margin-bottom: 50px;
 }
 
 .boutons a{
@@ -536,4 +632,19 @@ header nav a:hover{
 
 .boutons a:hover{
     background-color: #929487;
+}
+
+.boutonRetour{
+    color: #424242;
+    padding: 15px 40px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    border: 3px solid #EB4652;
+    border-radius: 5px;
+}
+
+.boutonRetour:hover{
+    color: black;
 }
